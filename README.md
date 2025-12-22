@@ -27,4 +27,4 @@ This repository hosts a deep learning framework designed to perform semantic seg
 * **Labels:** Cadastral map derived ground truth
 
 ---
-Melih Levent Aslan | M.Sc. Student, University of Bonn
+*Melih Levent Aslan | M.Sc. Geodetic Engineering Student, University of Bonn*
