@@ -54,6 +54,7 @@ A critical challenge arose during the transition from training on 8-bit PNG chip
 * **The Solution:** We implemented **Threshold Tuning**, raising the decision boundary to **0.6**. This mathematically filtered the background noise while retaining high-confidence building predictions ($p \approx 0.73$), as shown below:
 
 ![Domain Shift Debug](Final_images/debug_prediction.png)
+
 *Left: Raw Output (Noise). Right: Corrected Output (Threshold t=0.6).*
 
 ## 📜 Citation
