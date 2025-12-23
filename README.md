@@ -11,7 +11,7 @@
 ## Project Visuals
 | **Macro-Scale Extraction** | **Pipeline Workflow** |
 |:--------------------------:|:---------------------:|
-| ![Quad View](Final_images/results_map.jpg) | ![Workflow](Final_images/Data_processing_workflow.png) |
+| ![Quad View](Final_images/results_map.png) | ![Workflow](Final_images/Data_processing_workflow.png) |
 | *Bonn Segmentation* | *End-to-End Processing Chain* |
 
 ## Project Overview
