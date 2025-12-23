@@ -6,6 +6,7 @@
 ## Project Overview
 This repository hosts a deep learning framework designed to perform semantic segmentation on high-resolution orthophotos (DOP). The primary objective is the automated detection of sealed surfaces (imperviousness) to support urban drainage tax assessment and environmental monitoring.
 
+
 ## Objectives
 * **Automation:** Replace manual digitizing of sealed surfaces with AI-driven inference.
 * **Accuracy:** Achieve a high Intersection over Union (IoU) score on the "Impervious" class.
@@ -25,6 +26,18 @@ This repository hosts a deep learning framework designed to perform semantic seg
 ## Dataset
 * **Input:** Digital Orthophotos (DOP20)
 * **Labels:** Cadastral map derived ground truth
+
+## Engineering Challenges & Solutions
+
+### The "Domain Shift" Problem
+During the transition from training on small chips (PNG) to inference on full-scale satellite maps (JP2), we encountered a **Domain Shift** issue.
+* **Symptom:** The initial inference produced a single massive polygon covering the entire city, indicating that the model was classifying the background (Ground) as "Building."
+* **Diagnosis:** Analyzing a single inference tile revealed that the model's confidence scores were compressed. Background pixels had a probability of ~0.50, while Buildings were ~0.73.
+* **Root Cause:** The standard binary threshold of `0.5` was too low for the raw JP2 data distribution, causing false positives for the entire background.
+* **Solution:** We implemented **Threshold Tuning**, raising the decision boundary to `0.6`. This successfully filtered out the background noise while retaining high-confidence building predictions, resulting in clean, separated vector polygons.
+
+## Note:
+Training script contains environment-specific paths that need adjustment for local reproduction."
 
 ---
 *Melih Levent Aslan | M.Sc. Geodetic Engineering Student, University of Bonn*
