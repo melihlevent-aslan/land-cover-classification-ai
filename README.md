@@ -70,3 +70,6 @@ If you use this code or methodology in your research, please cite the project as
   journal = {GitHub Repository},
   howpublished = {\url{[https://github.com/YOUR_USERNAME/land-cover-classification-ai](https://github.com/YOUR_USERNAME/land-cover-classification-ai)}}
 }
+```
+---
+*Melih Levent Aslan | M.Sc. Geodetic Engineering Student, University of Bonn*
