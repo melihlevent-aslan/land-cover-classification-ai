@@ -31,7 +31,7 @@ Municipalities in Germany levy a **Rainwater Drainage Tax** (*Niederschlagswasse
 4.  **Inference Strategy:** Sliding window inference with **Confidence Threshold Tuning** ($t=0.6$) to handle domain shifts.
 5.  **Post-Processing:** Vectorization to GeoPackage (.gpkg) and spatial SQL analysis for area calculation.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Deep Learning:** PyTorch, Segmentation Models PyTorch (SMP)
 * **Geospatial:** Rasterio, Geopandas, Shapely, OpenCV
 * **Hardware:** Trained on NVIDIA RTX 5070 (8GB VRAM) / AMD Ryzen 9 8940HX
@@ -57,7 +57,7 @@ A critical challenge arose during the transition from training on 8-bit PNG chip
 
 *Left: Raw Output (Noise). Right: Corrected Output (Threshold t=0.6).*
 
-## 📜 Citation
+## Citation
 If you use this code or methodology in your research, please cite the project as follows:
 
 **BibTeX:**
