@@ -7,7 +7,7 @@ conda_env_path = r"C:\Users\NewFo\anaconda3\envs\spatial_ai"
 # 1. Define paths
 gdal_data = os.path.join(conda_env_path, r"Library\share\gdal")
 gdal_plugins = os.path.join(conda_env_path, r"Library\lib\gdalplugins")
-gdal_bin = os.path.join(conda_env_path, r"Library\bin") # <--- CRITICAL MISSING LINK
+gdal_bin = os.path.join(conda_env_path, r"Library\bin") 
 
 # 2. Set Environment Variables
 os.environ['GDAL_DATA'] = gdal_data
