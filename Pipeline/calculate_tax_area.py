@@ -42,8 +42,8 @@ def calculate_areas(gpkg_path):
     total_area = gdf['area_m2'].sum()
     total_tax = gdf['estimated_tax_euro'].sum()
     
-    print(f"   ✅ Total Sealed Surface: {total_area:,.2f} m²")
-    print(f"   💰 Estimated Annual Tax Revenue: €{total_tax:,.2f}")
+    print(f"    Total Sealed Surface: {total_area:,.2f} m²")
+    print(f"    Estimated Annual Tax Revenue: €{total_tax:,.2f}")
     
     return gdf[['area_m2', 'estimated_tax_euro']]
 
