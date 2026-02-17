@@ -4,7 +4,7 @@
 ![Computer Vision](https://img.shields.io/badge/Task-Semantic_Segmentation-blue)
 ![Status](https://img.shields.io/badge/Status-Research_Complete-green)
 
-> 📄 **[Read the Full White Paper (PDF)](./Automated_Urban_Impervious_Surface_Extraction.pdf)**
+> **[Read the Full White Paper (PDF)](./Automated_Urban_Impervious_Surface_Extraction.pdf)**
 
 > **Note:** This repository contains the code and methodology for the research paper: *"Automated Urban Impervious Surface Extraction for Drainage Tax Assessment using Deep Residual U-Nets"*.
 
